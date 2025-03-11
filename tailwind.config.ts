@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,59 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Custom colors for fertilizer business
+				earth: {
+					50: '#f5f7f2',
+					100: '#e6ede1',
+					200: '#d0dbc2',
+					300: '#b3c49e',
+					400: '#94a97b',
+					500: '#778c5f',
+					600: '#5e704a',
+					700: '#485a3a',
+					800: '#3a472f',
+					900: '#303c28',
+					950: '#1a2115',
+				},
+				leaf: {
+					50: '#f0f9f0',
+					100: '#dcf0dc',
+					200: '#bde2bf',
+					300: '#92ce96',
+					400: '#67b56d',
+					500: '#49994f',
+					600: '#367a3e',
+					700: '#2b6232',
+					800: '#254f2a',
+					900: '#204225',
+					950: '#0d2410',
+				},
+				soil: {
+					50: '#f9f6f3',
+					100: '#f0e9e2',
+					200: '#e2d4c6',
+					300: '#d0b7a1',
+					400: '#bd967a',
+					500: '#ae7f5f',
+					600: '#a06c4f',
+					700: '#845843',
+					800: '#6c493b',
+					900: '#593e33',
+					950: '#302019',
+				},
+				sky: {
+					50: '#f0f8ff',
+					100: '#e0f1fe',
+					200: '#bae2fd',
+					300: '#7dcbfb',
+					400: '#3aacf7',
+					500: '#0e8fed',
+					600: '#0273cf',
+					700: '#035ca7',
+					800: '#074e8a',
+					900: '#0a4272',
+					950: '#07294a',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -70,26 +124,48 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' },
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
-				}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' },
+				},
+				'fade-in': {
+					from: { opacity: '0', transform: 'translateY(10px)' },
+					to: { opacity: '1', transform: 'translateY(0)' },
+				},
+				'fade-out': {
+					from: { opacity: '1', transform: 'translateY(0)' },
+					to: { opacity: '0', transform: 'translateY(10px)' },
+				},
+				'slide-in-left': {
+					from: { transform: 'translateX(-100%)' },
+					to: { transform: 'translateX(0)' },
+				},
+				'slide-in-right': {
+					from: { transform: 'translateX(100%)' },
+					to: { transform: 'translateX(0)' },
+				},
+				'zoom-in': {
+					from: { transform: 'scale(0.95)', opacity: '0' },
+					to: { transform: 'scale(1)', opacity: '1' },
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'fade-out': 'fade-out 0.5s ease-out',
+				'slide-in-left': 'slide-in-left 0.5s ease-out',
+				'slide-in-right': 'slide-in-right 0.5s ease-out',
+				'zoom-in': 'zoom-in 0.3s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
