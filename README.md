@@ -1,24 +1,43 @@
-# Welcome to your Lovable project
+# Welcome to fertilytics-storefront
 
 ## Project info
+# 🛒 Fertilytics Storefront
 
-**URL**: https://lovable.dev/projects/b60f69b0-3085-4a7c-8d2e-3f246ec982e2
+A modern, responsive e-commerce storefront built for **Fertilytics**, focused on providing a seamless shopping experience with clean UI, intuitive navigation, and efficient product management.
 
-## How can I edit this code?
+## 🧩 Project Overview
 
-There are several ways of editing your application.
+**Fertilytics Storefront** is the front-facing e-commerce platform for Fertilytics. It allows users to browse products, view detailed product information, and place orders with ease. Designed with user experience in mind, the storefront integrates modern web technologies for speed, accessibility, and responsiveness.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b60f69b0-3085-4a7c-8d2e-3f246ec982e2) and start prompting.
+## ⚙️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React.js / Next.js / TypeScript *(adjust if needed)*
+- **Styling**: Tailwind CSS / SCSS / Styled Components *(adjust if needed)*
+- **Backend**: (Optional – if headless CMS or API is integrated)
+- **State Management**: Context API / Redux Toolkit
+- **API Integration**: REST / GraphQL *(mention if any external APIs are used)*
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## ✨ Key Features
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- 🛍️ Product Listings with Filters and Categories
+- 🔍 Product Detail Pages with Descriptions, Reviews, and Prices
+- 🛒 Add to Cart / Remove from Cart Functionality
+- 📦 Checkout Flow (Optional or Placeholder if not yet implemented)
+- 📱 Fully Responsive Design for Mobile and Desktop
+- 💡 Clean and Modern UI with Focus on Usability
+
+---
+
+## 📁 Project Structure
+fertilytics-storefront/ │ ├── components/ # Reusable UI components ├── pages/ # Application routes (Next.js) or views ├── public/ # Static assets ├── styles/ # Tailwind config / custom styles ├── utils/ # Utility functions ├── services/ # API and backend integration ├── context/ # Global state management └── README.md # Project documentation
+
+
+
+ 
 
 Follow these steps:
 
@@ -50,20 +69,4 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b60f69b0-3085-4a7c-8d2e-3f246ec982e2) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+ 
